@@ -72,6 +72,10 @@ def two(input):
 
 	i = input.lower().replace("bert", "")
 	
+	for index in range(len(i)):
+		if i[index] == i[index+1]:
+			i.remove(i[index])
+			i.remove(i[index+1])
 	
 	return i
 
